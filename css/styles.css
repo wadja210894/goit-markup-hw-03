@@ -1,0 +1,198 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --white-text: #ffffff;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white-text);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style-type: none;
+}
+.link{
+  text-decoration: none;
+}
+.site-nav-logo {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+.logo-first {
+  color: var(--accent-color);
+}
+.logo-second {
+  color: var(--primary-text-color);
+}
+.site-nav-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
+}
+.contact-link {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+.section-hero {
+  background-color: #2f303a;
+}
+.hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white-text);
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.benefits-title {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+.benefits-text {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.about-work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.our-team {
+  background-color: #f5f4fa;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.team-text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+.site-footer {
+  background-color: #2f303a;
+}
+.logo-second-footer {
+  color: var(--white-text);
+}
+.addres {
+  line-height: calc(24 / 14);
+  color: var(--white-text);
+  font-style: normal;
+  text-decoration: none;
+}
+.addres:hover,
+.addres:focus {
+  color: var(--accent-color);
+}
+.contact-link-footer {
+  font-style: normal;
+  text-decoration: none;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-link-footer:hover,
+.contact-link-footer:focus {
+  color: var(--accent-color);
+}
+.curent {
+  color: var(--accent-color);
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--primary-text-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background: var(--accent-color);
+  color: var(--white-text);
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+.portfolio-subtitle {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--secondary-text-color);
+}
