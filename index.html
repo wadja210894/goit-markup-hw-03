@@ -17,6 +17,7 @@
   <body>
     <!-- Шапка сайту -->
     <header class="site-header">
+     <div class="container">
       <nav class="site-nav">
         <a class="site-nav-logo" href="./index.html"><span class="logo-first">Web</span><span class="logo-second">Studio</span></a>
         <ul class="site-nav-list list">
@@ -29,16 +30,20 @@
         <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+     </div>
     </header>
     <!-- Основний контент -->
     <main>
       <!-- Секція герой -->
       <section class="section-hero">
-        <h1 class="hero-text">Ефективні рішення для<br> вашого бізнесу</h1>
-        <button class="hero-button button" type="button">Замовити послугу</button>
+        <div class="container">
+          <h1 class="hero-text">Ефективні рішення для<br> вашого бізнесу</h1>
+          <button class="hero-button button" type="button">Замовити послугу</button>
+        </div>
       </section>
       <!-- Секція наші переваги -->
       <section class="section-benefits">
+       <div class="container">
         <h2 class="benefits-title visually-hidden">Наші переваги</h2>
         <ul class="benefits-list list">
           <li>
@@ -69,17 +74,21 @@
             </p>
           </li>
         </ul>
+       </div>
       </section>
       <!-- Секція чим ми займаємося -->
       <section class="about-work">
+      <div class="container">
         <h2 class="about-work-title">Чим ми займаємося</h2>
         <img src="./images/img1.jpg" alt="робота за компютером" width="370" />
         <img src="./images/img2.jpg" alt="робота за телефоном" width="370" />
         <img src="./images/img3.jpg" alt="робота за планшетом" width="370" />
+      </div>
       </section>
       <!-- Секція наша команда -->
       <section class="our-team">
-        <h2 class="team-title">Наша команда</h2>
+        <div class="container">
+          <h2 class="team-title">Наша команда</h2>
         <ul class="team-list list">
           <li>
             <img
@@ -118,25 +127,28 @@
             <p class="team-text">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- Підвал сайту -->
     <footer class="site-footer">
-      <address>
-        <ul class="adres-list list">
-          <li><a class="site-nav-logo" href="./index.html"><span class="logo-first">Web</span><span class="logo-second-footer">Studio</span></a></li>
-          <li>
-            <a class="addres"
-              href="https://goo.gl/maps/3w15q6gvffN8V6KR9"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li><a class="contact-link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="contact-link-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <address>
+          <ul class="adres-list list">
+            <li><a class="site-nav-logo" href="./index.html"><span class="logo-first">Web</span><span class="logo-second-footer">Studio</span></a></li>
+            <li>
+              <a class="addres"
+                href="https://goo.gl/maps/3w15q6gvffN8V6KR9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li><a class="contact-link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contact-link-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
