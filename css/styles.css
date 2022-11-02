@@ -43,12 +43,14 @@ body {
 .logo-second {
   color: var(--primary-text-color);
 }
-.site-nav {
-  display: flex;
-  align-items: center;
+.site-header{
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
 }
 .site-nav-list {
   display: flex;
