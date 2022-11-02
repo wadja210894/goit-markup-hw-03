@@ -23,9 +23,9 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;  
+  padding: 0 15px;
 }
-.site-header .container {
+.site-header > .container {
   display: flex;
   align-items: center;
 }
@@ -46,6 +46,9 @@ body {
 .site-nav {
   display: flex;
   align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 .site-nav-list {
   display: flex;
@@ -54,7 +57,7 @@ body {
 .site-nav-list .item {
   margin-right: 50px;
 }
-.site-nav-list .item:last-child {
+.site-nav-list > .item:last-child {
   margin-right: 0;
 }
 .site-nav-link {
@@ -154,6 +157,7 @@ body {
 .benefits-list {
   display: flex;
   padding: 94px 0;
+  flex-basis: calc(100% / 4);
 }
 .benefits-title {
   margin: 0;
@@ -170,7 +174,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.about-work .container {
+.about-work > .container {
   padding-bottom: 94px;
 }
 .about-work-title {
@@ -190,7 +194,7 @@ body {
   flex-basis: calc((100%-30px) / 3);
   margin-right: 30px;
 }
-.about-work-galery img:last-child {
+.about-work-galery > img:last-child {
   margin-right: 0px;
 }
 .our-team {
@@ -199,12 +203,12 @@ body {
 .team-list {
   display: flex;
 }
-.team-list .item {
+.team-list > .item {
   flex-basis: calc((100% - 30px) / 4);
   margin-right: 30px;
   margin-bottom: 94px;
 }
-.team-list .item:last-child {
+.team-list > .item:last-child {
   margin-right: 0px;
 }
 .item-element {
@@ -280,17 +284,19 @@ body {
 }
 .filter-list {
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
   justify-content: center;
 }
-.filter-list li {
+.filter-list > li {
   margin-right: 8px;
 }
-.filter-list li:last-child {
+.filter-list > li:last-child {
   margin-right: 0px;
 }
 .filter-button {
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -307,25 +313,27 @@ body {
   background: var(--accent-color);
   color: var(--white-text);
 }
+.portfolio-content > .image {
+  display: flex;
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
 }
-.portfolio-list .item{
- margin-right: 30px;
- margin-bottom: 30px;
+.portfolio-list > .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
-.portfolio-list .item:nth-child(3n) {
+.portfolio-list > .item:nth-child(3n) {
   margin-right: 0px;
 }
-.portfolio-list .item:nth-last-child(-n+3){
+.portfolio-list > .item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
   padding-bottom: 94px;
 }
-.portfolio-item{
+.portfolio-item {
   width: 370px;
-  height: 404px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 .portfolio-title {
   margin: 0;
@@ -342,6 +350,7 @@ body {
   margin: 0;
   padding-top: 4px;
   padding-left: 24px;
+  padding-bottom: 20px;
 
   font-size: 16px;
   line-height: calc(30 / 16);
