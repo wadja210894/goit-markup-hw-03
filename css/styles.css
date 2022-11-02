@@ -44,7 +44,25 @@ body {
 .logo-second {
   color: var(--primary-text-color);
 }
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav-list .item {
+  margin-right: 50px;
+}
+.site-nav-list .item:last-child {
+  margin-right: 0;
+}
 .site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -55,10 +73,18 @@ body {
 .site-nav-link:focus {
   color: var(--accent-color);
 }
-.site-nav {
+.contact {
   display: flex;
+  margin-left: 344px;
+}
+.contact .item + .item {
+  margin-left: 50px;
 }
 .contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   text-decoration: none;
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -75,10 +101,13 @@ body {
 .section-hero {
   background-color: #2f303a;
 }
+.section-hero .container {
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
 .hero-text {
   margin: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
 
   font-weight: 900;
   font-size: 44px;
@@ -92,7 +121,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-    
+
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -125,6 +154,7 @@ body {
 }
 .benefits-list {
   display: flex;
+  padding: 94px 0;
 }
 .benefits-title {
   margin: 0;
@@ -141,8 +171,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+.about-work .container {
+  padding-bottom: 94px;
+}
 .about-work-title {
   margin: 0;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -150,12 +184,41 @@ body {
   text-align: center;
   color: var(--primary-text-color);
 }
+.about-work-galery {
+  display: flex;
+}
+.about-work-galery img {
+  flex-basis: calc((100%-30px) / 3);
+  margin-right: 30px;
+}
+.about-work-galery img:last-child {
+  margin-right: 0px;
+}
 .our-team {
   background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+}
+.team-list .item {
+  flex-basis: calc((100% - 30px) / 4);
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+.team-list .item:last-child {
+  margin-right: 0px;
+}
+.item-element {
+  background-color: var(--white-text);
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-title {
   margin: 0;
   padding-top: 94px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -165,6 +228,7 @@ body {
 }
 .team-subtitle {
   margin: 0;
+  margin-top: 30px;
 
   font-weight: 500;
   font-size: 16px;
@@ -174,6 +238,7 @@ body {
 }
 .team-text {
   margin: 0;
+  margin-top: 10px;
 
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -182,10 +247,16 @@ body {
 .site-footer {
   background-color: #2f303a;
 }
+.adres-list {
+  padding: 60px 0px;
+}
 .logo-second-footer {
   color: var(--white-text);
 }
 .addres {
+  display: block;
+  padding-top: 20px;
+
   line-height: calc(24 / 14);
   color: var(--white-text);
   font-style: normal;
@@ -196,6 +267,9 @@ body {
   color: var(--accent-color);
 }
 .contact-link-footer {
+  display: block;
+  padding-top: 9px;
+
   font-style: normal;
   text-decoration: none;
   line-height: 24px;
@@ -204,6 +278,18 @@ body {
 .contact-link-footer:hover,
 .contact-link-footer:focus {
   color: var(--accent-color);
+}
+.filter-list {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.filter-list li {
+  margin-right: 8px;
+}
+.filter-list li:last-child {
+  margin-right: 0px;
 }
 .filter-button {
   font-weight: 500;
@@ -222,7 +308,13 @@ body {
   background: var(--accent-color);
   color: var(--white-text);
 }
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .portfolio-title {
+  margin: 0;
+
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -230,7 +322,18 @@ body {
   color: var(--primary-text-color);
 }
 .portfolio-subtitle {
+  margin: 0;
+
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--secondary-text-color);
+}
+.portfolio-items {
+  margin-right: 30px;
+  height: 404px;
+  width: 370px;
+  border: 1px solid #eeeeee;
+}
+.portfolio-items:nth-child(3n) {
+  margin-right: 0px;
 }
