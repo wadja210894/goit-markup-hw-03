@@ -24,10 +24,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-.site-header > .container {
-  display: flex;
-  align-items: center;
+  outline: 1px solid red;
 }
 .site-nav-logo {
   font-family: "Raleway", sans-serif;
@@ -43,7 +40,7 @@ body {
 .logo-second {
   color: var(--primary-text-color);
 }
-.site-header{
+.site-header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
@@ -79,7 +76,7 @@ body {
 }
 .contact {
   display: flex;
-  margin-left: 344px;
+  margin-left: auto;
 }
 .contact .item + .item {
   margin-left: 50px;
@@ -103,11 +100,9 @@ body {
   color: var(--accent-color);
 }
 .section-hero {
+  padding: 200px 0px;
+
   background-color: #2f303a;
-}
-.section-hero .container {
-  padding-bottom: 200px;
-  padding-top: 200px;
 }
 .hero-text {
   margin: 0;
@@ -125,6 +120,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 32px;
 
   font-weight: 700;
   font-size: 16px;
@@ -138,11 +134,14 @@ body {
   background-color: var(--accent-color);
   border: none;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
+}
+.section-benefits {
+  padding: 94px 0;
 }
 .visually-hidden {
   position: absolute;
@@ -158,12 +157,18 @@ body {
 }
 .benefits-list {
   display: flex;
-  padding: 94px 0;
   flex-basis: calc(100% / 4);
+}
+.benefits-list li {
+  margin-right: 30px;
+}
+.benefits-list li:last-child {
+  margin-right: 0px;
 }
 .benefits-title {
   margin: 0;
 
+  font-size: 14px;
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
@@ -172,12 +177,13 @@ body {
 .benefits-text {
   margin: 0;
 
+  font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.about-work > .container {
-  padding-bottom: 94px;
+.about-work {
+  margin-bottom: 94px;
 }
 .about-work-title {
   margin: 0;
@@ -192,7 +198,7 @@ body {
 .about-work-galery {
   display: flex;
 }
-.about-work-galery img {
+.about-work-galery > img {
   flex-basis: calc((100%-30px) / 3);
   margin-right: 30px;
 }
@@ -200,6 +206,7 @@ body {
   margin-right: 0px;
 }
 .our-team {
+  padding: 94px 0px;
   background-color: #f5f4fa;
 }
 .team-list {
@@ -208,21 +215,22 @@ body {
 .team-list > .item {
   flex-basis: calc((100% - 30px) / 4);
   margin-right: 30px;
-  margin-bottom: 94px;
 }
 .team-list > .item:last-child {
   margin-right: 0px;
 }
+.item > img{
+  display: block;
+}
 .item-element {
+  padding: 30px 0px; 
   background-color: var(--white-text);
-  height: 368px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-title {
   margin: 0;
-  padding-top: 94px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -233,8 +241,8 @@ body {
 }
 .team-subtitle {
   margin: 0;
-  margin-top: 30px;
-
+  margin-bottom: 10px;
+  
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -242,26 +250,32 @@ body {
   color: var(--primary-text-color);
 }
 .team-text {
-  margin: 0;
-  margin-top: 10px;
+  margin: 0;  
 
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
 }
-.site-footer {
+.site-footer { 
+  padding: 60px 0px;
+
   background-color: #2f303a;
 }
-.adres-list {
-  padding: 60px 0px;
+.logo-footer{
+  display: block;
+  margin-bottom: 20px;
 }
+
 .logo-second-footer {
   color: var(--white-text);
 }
+.adres-list > li{
+  margin-bottom: 9px;
+}
+.adres-list > li:last-child{
+  margin-bottom: 0px;
+}
 .addres {
-  display: block;
-  padding-top: 20px;
-
   line-height: calc(24 / 14);
   color: var(--white-text);
   font-style: normal;
@@ -272,9 +286,6 @@ body {
   color: var(--accent-color);
 }
 .contact-link-footer {
-  display: block;
-  padding-top: 9px;
-
   font-style: normal;
   text-decoration: none;
   line-height: 24px;
@@ -284,9 +295,11 @@ body {
 .contact-link-footer:focus {
   color: var(--accent-color);
 }
+.products{
+  padding: 94px 0px;
+}
 .filter-list {
-  display: flex;
-  margin-top: 100px;
+  display: flex;  
   margin-bottom: 50px;
   justify-content: center;
 }
@@ -316,7 +329,7 @@ body {
   color: var(--white-text);
 }
 .portfolio-content > .image {
-  display: flex;
+  display: block;
 }
 .portfolio-list {
   display: flex;
@@ -330,17 +343,15 @@ body {
   margin-right: 0px;
 }
 .portfolio-list > .item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-  padding-bottom: 94px;
+  margin-bottom: 0px; 
 }
-.portfolio-item {
-  width: 370px;
+.portfolio-item { 
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 .portfolio-title {
   margin: 0;
-  padding-top: 20px;
-  padding-left: 24px;
+  margin-bottom: 4px;  
 
   font-weight: 700;
   font-size: 18px;
@@ -350,9 +361,6 @@ body {
 }
 .portfolio-subtitle {
   margin: 0;
-  padding-top: 4px;
-  padding-left: 24px;
-  padding-bottom: 20px;
 
   font-size: 16px;
   line-height: calc(30 / 16);
